@@ -11,8 +11,8 @@ function Book(name, author, pages, read) {
   this.page = pages;
   this.read = read;
 }
-const libro = new Book("libro", "maccio", 54, false);
-const libro2 = new Book("librazz", "macciolo", 534, true);
+const libro = new Book("libro", "maccio", 54, "READ");
+const libro2 = new Book("librazz", "macciolo", 534, "READ");
 let myLibrary = [libro, libro2];
 
 console.log(libro, myLibrary[0].name);
