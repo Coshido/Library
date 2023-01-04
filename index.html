@@ -12,7 +12,7 @@
     <main>
       <div class="addbook">
         <h2>Add a new book:</h2>
-        <form id="form-addbook" action="" method="get">
+        <form id="form-addbook" action="" method="get" onsubmit="newBook()">
           <div class="form-element">
             <label for="input-bookname">Book Name</label>
             <input type="text" id="input-bookname" />
@@ -33,7 +33,7 @@
             </select>
           </div>
           <div class="form-element">
-            <input class="button" type="submit" />
+            <input id="submit-button" class="button" type="submit" />
           </div>
         </form>
       </div>
