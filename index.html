@@ -11,7 +11,8 @@
     <header><h1>Library</h1></header>
     <main>
       <div class="addbook">
-        <form action="" method="get">
+        <h2>Add a new book:</h2>
+        <form id="form-addbook" action="" method="get">
           <div class="form-element">
             <label for="input-bookname">Book Name</label>
             <input type="text" id="input-bookname" />
@@ -21,15 +22,31 @@
             <input type="text" id="input-author" />
           </div>
           <div class="form-element">
-            <select>
+            <label for="input-pages">Pages</label>
+            <input type="number" id="input-pages" />
+          </div>
+          <div class="form-element">
+            <label for="input-select">Status</label>
+            <select id="input-select">
               <option>READ</option>
               <option>NOT READ</option>
             </select>
           </div>
-          <div class="form-element"><input type="submit" /></div>
+          <div class="form-element">
+            <input class="button" type="submit" />
+          </div>
         </form>
       </div>
-      <div class="library"></div>
+      <div class="library">
+        <h2>Your Library:</h2>
+        <div class="library-header">
+          <p class="lib-header">Book Name</p>
+          <p class="lib-header">Author</p>
+          <p class="lib-header">Pages</p>
+          <p class="lib-header">Status</p>
+        </div>
+        <div class="library-content"></div>
+      </div>
     </main>
     <script type="text/javascript" src="./javascript.js"></script>
   </body>
